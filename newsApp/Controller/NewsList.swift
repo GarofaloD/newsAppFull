@@ -56,7 +56,7 @@ class NewsList: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedArticle = listOfArticles[indexPath.row]
-        performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
+        performSegue(withIdentifier: GO_TO_NEWS_DETAILS, sender: selectedArticle)
     }
     
     
