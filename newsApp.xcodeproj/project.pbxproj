@@ -20,6 +20,7 @@
 		8CA3A5D122BC4B8A00A3092E /* ArticlesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA3A5D022BC4B8A00A3092E /* ArticlesRequest.swift */; };
 		8CB89C2F22BD139600CDE748 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB89C2E22BD139600CDE748 /* NewsCell.swift */; };
 		8CB89C3322C403CA00CDE748 /* NewsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB89C3222C403CA00CDE748 /* NewsImage.swift */; };
+		8CCC6A4222D4115C00653CA1 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC6A4122D4115C00653CA1 /* ArticleDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		8CA3A5D022BC4B8A00A3092E /* ArticlesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesRequest.swift; sourceTree = "<group>"; };
 		8CB89C2E22BD139600CDE748 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		8CB89C3222C403CA00CDE748 /* NewsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsImage.swift; sourceTree = "<group>"; };
+		8CCC6A4122D4115C00653CA1 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				8CB89C2E22BD139600CDE748 /* NewsCell.swift */,
 				8CB89C3222C403CA00CDE748 /* NewsImage.swift */,
+				8CCC6A4122D4115C00653CA1 /* ArticleDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				8C494E7722BAFD170065F5F2 /* SceneDelegate.swift in Sources */,
 				8CA3A5CF22BC467000A3092E /* News.swift in Sources */,
 				8C6AE85A22D2993B0002095E /* AppMenu.swift in Sources */,
+				8CCC6A4222D4115C00653CA1 /* ArticleDetailView.swift in Sources */,
 				8CA3A5CD22BC3D0400A3092E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,40 +1,31 @@
 //
-//  NewsDetails.swift
+//  ArticleDetailView.swift
 //  newsApp
 //
-//  Created by Daniel  Garofalo on 7/7/19.
+//  Created by Daniel  Garofalo on 7/8/19.
 //  Copyright © 2019 Daniel Garofalo. All rights reserved.
 //
 
 import UIKit
 
-class NewsDetails: UIViewController {
-
-    //Properties
-    var article = ArticleDetail()
+class ArticleDetailView: UIView {
+    
+    //Propoerties
+    static let instance = ArticleDetailView()
+    let empty = ""
     
     
     //MARK:- Outlets
-    @IBOutlet weak var articleImage: NewsImage!
-    @IBOutlet weak var articleSource: UILabel!
-    @IBOutlet weak var articleWriter: UILabel!
-    @IBOutlet weak var articleHeadline: UILabel!
-    @IBOutlet weak var articleContent: UILabel!
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var articleContent : UILabel!
+    @IBOutlet weak var articleHeadline : UILabel!
+    @IBOutlet weak var articleSource : UILabel!
+    @IBOutlet weak var articleWriter : UILabel!
+    @IBOutlet weak var articleImage = NewsImage()
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        configureArticleView(withArticle: article)
-        
-        scrollView.contentLayoutGuide.bottomAnchor.constraint(equalTo: articleContent.bottomAnchor).isActive = true
-        
-        
-        
-    }
     
-
+    //MARK:- Init function
+    
     func configureArticleView(withArticle article : ArticleDetail ) {
         
         if let imageToDisplay = article.urlToImage {
@@ -53,10 +44,4 @@ class NewsDetails: UIViewController {
         articleWriter.text = writer
         articleContent.text = content
     }
-    
-    
-    
-    
-    
-
 }

@@ -34,7 +34,7 @@ class NewsList: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         
-        // Do any additional setup after loading the view.
+        //Load Articles
         loadTopHeadlines()
     }
     
@@ -47,10 +47,8 @@ class NewsList: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: REUSABLE_NEWS_CELL , for: indexPath) as? NewsCell else {return UITableViewCell()}
-        
         let article = listOfArticles[indexPath.row]
         cell.configureCell(article: article)
-        
         return cell
     }
     
@@ -59,15 +57,13 @@ class NewsList: UIViewController, UITableViewDelegate, UITableViewDataSource {
         performSegue(withIdentifier: GO_TO_NEWS_DETAILS, sender: selectedArticle)
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let singleArticlePage = segue.destination as? NewsDetails {
+            if let selectedArticle = sender as? ArticleDetail {
+                singleArticlePage.article = selectedArticle
+            }
+        }
+    }
     
     
     //MARK:- Custom Functions

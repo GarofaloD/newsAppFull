@@ -12,10 +12,13 @@ class NewsCell: UITableViewCell {
 
     //var imageToLoad = NewsImage()
     
+    
+    
     @IBOutlet weak var newsImage = NewsImage()
     @IBOutlet weak var sourceLbl: UILabel!
     @IBOutlet weak var writerLbl: UILabel!
     @IBOutlet weak var headlineLbl: UILabel!
+
     
     
     override func awakeFromNib() {
@@ -62,6 +65,7 @@ class NewsCell: UITableViewCell {
         sourceLbl.text = source
         writerLbl.text = writer
         headlineLbl.text = headline
+        
         
     
     }

@@ -30,7 +30,7 @@ struct ArticleDetail : Decodable {
     var title : String?
     var description : String?
     var url : String?
-    var urlToImage : URL?      //////////
+    var urlToImage : URL?      
     var publishedAt : String?
     var content : String?
     
